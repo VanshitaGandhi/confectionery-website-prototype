@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  line-height: 1.5;
+  line-height: 1.3;
   color: #000;
   background-color: #eee;
 }
@@ -22,3 +22,238 @@ html {
 body {
   margin: 0;
 }
+
+h1 {
+  font-family: "Elsie Swash Caps", cursive;
+  font-size: 2.3rem;
+  margin-top: 0;
+
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+.two {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.three {
+  margin-bottom: .3rem;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+.img-card {
+  position: relative;
+}
+
+.img-card-content {
+  position: absolute;
+  top: 50%;
+  max-width: 45em;
+  width: 100%;
+  padding: 0 1em;
+  left: 50%;
+
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+.btn {
+  text-align: center;
+}
+
+a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+span {
+  font-weight: bold;
+}
+
+.section-two {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  max-width: 45em;
+  width: 100%;
+  padding: 0 1em;
+  left: 50%;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  position: absolute;
+  top: 90%;
+  max-width: 45em;
+  padding: .2rem;
+  left: 85%;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  margin-bottom: 1.3rem;
+}
+
+.nav li {
+  list-style-type: none;
+  align-items: center;
+  width: 25%
+  padding: .5em 0;
+  margin: 0;
+  text-align: center;
+}
+
+.br {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1.1rem;
+}
+
+a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 1.3rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.card {
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border: 1px solid #000;
+  width: 50%;
+}
+
+.card-1 {
+  background-color: #eee;
+  width: 50%;
+}
+
+.card-2 {
+  background-color: #ddd;
+  width: 50%;
+}
+
+.card-3 {
+  background-color: #ccc;
+}
+
+.card-4 {
+  background-color: #bbb;
+}
+
+.cards p {
+  padding: 1rem;
+}
+
+.cards h3 {
+  margin: 0;
+  padding: .75rem;
+  text-align: center;
+}
+
+
+/* .img-cards {
+  position: relative;
+}
+
+.img-card-content {
+  position: absolute;
+  top: 10px;
+  max-width: 10em;
+  padding: 0 1em;
+}
+
+.card-img {
+  position: absolute;
+  top: 10px;
+  max-width: 10em;
+  padding: 0 1em;
+}
+
+.card-1 {
+background-img: url("../images/placeholder-2by3.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card-2 {
+  width: 50%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* .img-card-two {
+  position: relative;
+  display: flex;
+  display: block;
+  width: 100%;
+}
+
+.img-card-three {
+  position: relative;
+  display: flex;
+  display: block;
+  width: 100%;
+}
+
+.img-card-four {
+  position: relative;
+  display: flex;
+  display: block;
+  width: 100%;
+} */ */

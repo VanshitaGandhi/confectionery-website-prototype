@@ -5,38 +5,41 @@
   <title>Coco’s Chocolatiers</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="img-card">
-      <div class="img">
-        <img src="images/placeholder-4by1.svg" alt="">
+      <div>
+        <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
       </div>
       <div class="img-card-content">
-        <p class="one">This BLACK FRIDAY</p>
+        <p class="one">This <span>BLACK FRIDAY</span></p>
         <p class="two">20% OFF</p>
         <p class="three">Sign-up on our website and Get 20% OFF</p>
-        <a class="link" href="#">SIGN-UP</a>
+        <div class="btn">
+          <a class="link" href="#">SIGN-UP</a>
+        </div>
       </div>
     </div>
     <div class="section-two">
-      <div class="img">
-        <img src="images/placeholder-4by1.svg" alt="">
+      <div>
+        <img class="img-flex" src="images/placeholder-3by2.svg" alt="">
       </div>
       <div class="title">
         <h1>COCO'S CHOCOLATIERS</h1>
       </div>
-      <div>
+      <div class="btn">
         <a class="button" href="#">SEARCH</a>
       </div>
     </div>
-    <div class="nav">
-      <nav>
+    <div class="navigation">
+      <nav class="nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Stores</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a class="br" href="#">Home</a></li>
+          <li><a class="br" href="#">Products</a></li>
+          <li><a class="br" href="#">Stores</a></li>
+          <li><a class="br" href="#">Contact Us</a></li>
         </ul>
       </nav>
     </div>
@@ -44,48 +47,34 @@
   <main>
     <div class="section-three">
       <h2>EVERYDAY VALUE OFFERS</h2>
-      <div class="img-cards">
-        <div class="img-card-one">
-          <img src="images/placeholder-2by3.svg" alt="">
+      <section>
+        <div class="cards">
+          <div class="card-1 card">
+            <img class="img-flex" src="images/placeholder-hex.svg" alt="">
+            <h3>ASSORTED CUPCAKES</h3>
+            <p>Freshly out of the oven for you!</p>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+          <div class="card-2 card">
+            <img class="img-flex" src="images/placeholder-hex.svg" alt="">
+            <h3>DONUT VALUE PACK</h3>
+            <p>Choose your favorites!</p>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+          <div class="card-3 card">
+            <img class="img-flex" src="images/placeholder-hex.svg" alt="">
+            <h3>DOUBLE CHOCOLATE LAVA CAKE</h3>
+            <p>Delicacy with oozing hot chocolate!</p>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+          <div class="card-4 card">
+            <img class="img-flex" src="images/placeholder-hex.svg" alt="">
+            <h3>VANILLA MUFFIN SPRINKLE</h3>
+            <p>Happiness sprinkled wih rainbows!</p>
+            <a class="btn" href="#">Buy now</a>
+          </div>
         </div>
-        <div>
-          <img src="images/placeholder-hex.svg" alt="">
-        </div>
-        <div class="image-card-content">
-          <h3>ASSORTED CUPCAKES</h3>
-          <p>Freshly out of the oven for you!</p>
-        </div>
-        <div class="img-card-two">
-          <img src="images/placeholder-2by3.svg" alt="">
-        </div>
-        <div>
-          <img src="images/placeholder-hex.svg" alt="">
-        </div>
-        <div class="image-card-content">
-          <h3>DONUT VALUE PACK</h3>
-          <p>Choose your favorites!</p>
-        </div>
-        <div class="img-card-three">
-          <img src="images/placeholder-2by3.svg" alt="">
-        </div>
-        <div>
-          <img src="images/placeholder-hex.svg" alt="">
-        </div>
-        <div class="image-card-content">
-          <h3>DOUBLE CHOCOLATE LAVA CAKE</h3>
-          <p>Delicacy with oozing hot chocolate!</p>
-        </div>
-        <div class="img-card-four">
-          <img src="images/placeholder-2by3.svg" alt="">
-        </div>
-        <div>
-          <img src="images/placeholder-hex.svg" alt="">
-        </div>
-        <div class="image-card-content">
-          <h3>VANILLA MUFFIN SPRINKLE</h3>
-          <p>Happiness sprinkled wih rainbows!</p>
-        </div>
-      </div>
+      </section>
     </div>
     <div class="section-four">
       <h2>RESERVE A TABLE</h2>
@@ -100,7 +89,7 @@
     </div>
     <div class="section-five">
       <h2>LOCATE US</h2>
-      <div class="img">
+      <div class="img-flex">
         <img src="images/placeholder-4by1.svg" alt="">
       </div>
       <img class="map" src="images/placeholder-1by1.svg" alt="">
