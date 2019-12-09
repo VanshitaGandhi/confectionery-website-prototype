@@ -48,6 +48,7 @@ a {
 
 a .link {
   margin-bottom: 1.3rem;
+  display: block;
 }
 
 .one {
@@ -140,6 +141,7 @@ ul {
 .nav {
   margin-bottom: 1.3rem;
   padding: 0 1rem;
+  background-color: #000;
 }
 
 .nav li {
@@ -148,6 +150,7 @@ ul {
   padding: .5em 0;
   margin: 0;
   text-align: center;
+  width: 25%;
 }
 
 a .br {
@@ -162,6 +165,7 @@ a .br {
 h2 {
   margin: 0;
   margin-bottom: 1.3rem;
+  padding-left: .5rem;
 }
 
 .cards {
@@ -197,6 +201,7 @@ h2 {
 
 .cards p {
   padding: 1rem;
+  flex-grow: 1;
 }
 
 .cards h3 {
@@ -220,13 +225,14 @@ h2 {
   flex-direction: column;
   border: 1px solid #000;
   width: 50%;
+  padding-bottom: 8rem;
 }
 
 .reserve {
   position: absolute;
   width: 100%;
   left: 50%;
-  bottom: 2%;
+  bottom: 4%;
   transform: translate(-50%, -50%);
 }
 
@@ -235,17 +241,30 @@ img .img-flex {
   width: 100%;
 }
 
-.map-placeholder {
+.map-2 {
   position: relative;
 }
 
-.map-button {
+.map {
   position: absolute;
-  max-width: 45em;
   padding: 1rem 2rem;
-  left: 80%;
+  left: 23%;
+  top: 50%;
+  width: 50%;
   align-items: flex-start;
   transform: translate(-50%, -50%);
+}
+
+.map-content {
+  position: absolute;
+  padding: 1rem 2rem;
+  right: -7%;
+  top: 26%;
+  align-items: flex-start;
+}
+
+p.map-text {
+  font-size: 1.3rem;
 }
 
 .link-card-one {
@@ -292,10 +311,11 @@ img .img-flex {
 }
 
 .br {
-  font-size: 1rem;
+  font-size: .7rem;
   text-decoration: none;
   color: #fff;
   padding: .5rem;
+  display: block;
 }
 
 .footer {
@@ -325,6 +345,7 @@ img .social-img {
 .social {
   padding: 0 1rem;
   list-style-type: none;
+  display: flex;
 }
 
 .social > li {
@@ -344,9 +365,22 @@ img .social-img {
 .us {
   display: flex;
   width: 30%;
+  padding: 1rem;
 }
 
 p .none {
+  display: none;
+}
+
+.social li {
+  width: 15%;
+}
+
+.social a {
+  display: block;
+}
+
+.p2 {
   display: none;
 }
 
@@ -382,13 +416,24 @@ p .none {
   }
 
   .reserve {
-    top: 89%;
+    top: 86%;
     left: 50%;
   }
 
   a .br {
     font-size: 1.3rem;
     padding: .5rem;
+    display: block;
+  }
+
+  .br {
+    font-size: 1rem;
+  }
+
+  .map-content {
+    padding: 1rem 2rem;
+    right: 1%;
+    top: 28%;
   }
 
 }
@@ -415,7 +460,7 @@ p .none {
   }
 
   .three {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   a {
@@ -438,6 +483,7 @@ p .none {
   }
 
   .br {
+    display: block;
     padding: .5rem;
   }
 
@@ -461,6 +507,16 @@ p .none {
     margin-bottom: 1.4rem;
   }
 
+  .map-content {
+    padding: 1rem 2rem;
+    right: 7%;
+    top: 34%;
+  }
+
+  p.map-text {
+    font-size: 1.4rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -477,20 +533,15 @@ p .none {
 
   .one,
   .three {
-    font-size: 2.5rem;
+    font-size: 1.4rem;
   }
 
   .two {
-    font-size: 10.1rem;
+    font-size: 4.5rem;
   }
 
   .three {
-    margin-bottom: 3.5rem;
-  }
-
-  a {
-    font-size: 2rem;
-    padding: 1rem;
+    margin-bottom: 1rem;
   }
 
   a .link {
@@ -499,9 +550,9 @@ p .none {
   }
 
   h1 {
-    font-size: 6.5rem;
-    text-align: center;
-    max-width: 60em;
+    font-size: 5rem;
+    text-align: left;
+    max-width: 120em;
   }
 
   .title {
@@ -511,12 +562,15 @@ p .none {
   a.button {
     font-size: 2rem;
     padding: .5rem;
+    top: 15%;
+    left: 90%;
   }
 
   .br {
-    font-size: 2.5rem;
-    padding-left: 3rem;
-    padding-right: 3.3rem;
+    display: block;
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   h2 {
@@ -537,15 +591,15 @@ p .none {
     flex-wrap: nowrap;
   }
 
-  .reserve {
-    top: 81%;
+  a.reserve {
+    left: 50%;
+    font-size: 2rem;
+    padding: .5rem;
+    top: 82%;
   }
 
-  .map-button {
-    top: 440%;
-    left: 76%;
-    font-size: 3rem;
-    padding: 2rem;
+  .relative {
+    position: relative;
   }
 
   .call {
@@ -557,7 +611,7 @@ p .none {
   }
 
   .us {
-    width: 20%;
+    width: 35%;
   }
 
   p .none {
@@ -574,6 +628,39 @@ p .none {
 
   .link-card-one {
     margin-bottom: 1.5rem;
+  }
+
+  .map-content {
+    padding: 1rem 2rem;
+  }
+
+  p.map-text {
+    font-size: 2rem;
+  }
+
+  a.map-button {
+    font-size: 2rem;
+    padding: 1rem;
+    top: 440%;
+    left: 76%;
+  }
+
+  .map {
+    top: 50%;
+    left: 24%;
+  }
+
+  .p1 {
+    display: none;
+  }
+
+  .p2 {
+    display: inline;
+  }
+
+  a.link {
+    padding: .5rem;
+    font-size: 1.5rem;
   }
 
 }
@@ -596,11 +683,11 @@ p .none {
 
   .one,
   .three {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .two {
-    font-size: 12rem;
+    font-size: 5rem;
   }
 
   .three {
@@ -612,14 +699,14 @@ p .none {
     padding: 1rem;
   }
 
-  a .link {
-    padding: 2rem;
+  a.link {
+    padding: .5rem;
     font-size: 1.5rem;
   }
 
   h1 {
-    font-size: 9rem;
-    text-align: center;
+    font-size: 7rem;
+    text-align: left;
     max-width: 120em;
   }
 
@@ -628,12 +715,12 @@ p .none {
   }
 
   a.button {
-    font-size: 3rem;
-    padding: 1rem;
+    padding: .5rem;
   }
 
   .br {
-    font-size: 3rem;
+    display: block;
+    font-size: 1.8rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -647,6 +734,18 @@ p .none {
   }
 
   p {
+    font-size: 1.5rem;
+  }
+
+  .p1 {
+    display: none;
+  }
+
+  .p2 {
+    display: inline;
+  }
+
+  .btn {
     font-size: 1.5rem;
   }
 
