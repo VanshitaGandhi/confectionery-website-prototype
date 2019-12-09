@@ -296,6 +296,8 @@ img .img-flex {
   text-decoration: none;
   color: #fff;
   padding: .5rem;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
 }
 
 .footer {
@@ -438,8 +440,8 @@ p .none {
   }
 
   .br {
-    padding-left: 2.3rem;
-    padding-right: 2.3rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7 rem;
   }
 
   h2 {
@@ -534,6 +536,7 @@ p .none {
 
   .cards {
     margin-bottom: 1.5rem;
+    display: flex;
     flex-wrap: nowrap;
   }
 
@@ -649,5 +652,7 @@ p .none {
   p {
     font-size: 1.5rem;
   }
+
+}
 
 }
