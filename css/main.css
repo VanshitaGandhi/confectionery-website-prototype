@@ -26,18 +26,27 @@ body {
 h1 {
   font-family: "Elsie Swash Caps", cursive;
   font-size: 2.3rem;
-  margin-top: 0;
+  margin-top: 0 0 1.3;
 
 }
 
 p {
   font-size: 1.3rem;
-  margin: 0;
+  margin: 0 0 1.3;
   text-align: center;
 }
 
 a {
   text-align: center;
+}
+
+a .link {
+  margin-bottom: 1.3rem;
+}
+
+.one {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .two {
@@ -48,6 +57,7 @@ a {
 
 .three {
   margin-bottom: .3rem;
+  margin-top: 0;
 }
 
 .img-flex {
@@ -143,11 +153,13 @@ ul {
   text-align: center;
 }
 
-.br {
+a .br {
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
-  padding: 0.5rem 1.1rem;
+  padding: .5rem .5rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
 }
 
 a:hover {
@@ -203,6 +215,7 @@ h2 {
 }
 
 .section-four {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -219,56 +232,468 @@ h2 {
   width: 50%;
 }
 
+.reserve {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+}
 
-/* .img-cards {
+img .img-flex {
+  display: block;
+  width: 100%;
+}
+
+.map-placeholder {
   position: relative;
 }
 
-.img-card-content {
+.map-button {
   position: absolute;
-  top: 10px;
-  max-width: 10em;
-  padding: 0 1em;
+  max-width: 45em;
+  padding: 1rem 2rem;
+  left: 80%;
+  align-items: flex-start;
+  transform: translate(-50%, -50%);
 }
 
-.card-img {
-  position: absolute;
-  top: 10px;
-  max-width: 10em;
-  padding: 0 1em;
+.link-card-one {
+  display: block;
+  border-width: 3px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #000;
+  font-size: 1.3rem;
+
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+
+  padding: .4em .75em .5em;
+  margin: 0 0 1.3rem;
 }
 
-.card-1 {
-background-img: url("../images/placeholder-2by3.svg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.card-2 {
-  width: 50%;
+.email {
   display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: .5em .75em;
+  border-radius: 3px;
+  border-width: 8px;
+  color: #000;
+  background-color: #bbb ;
+  font-weight: bold;
+}
+
+.link-card-one:hover .email {
+  background-color: #333;
+  color: #fff;
+}
+
+.about-us p {
+  display: block;
+  margin: 0 1.3rem;
+}
+
+.about-us p {
   margin: 0;
-  padding: 0;
+  margin-bottom: 1.3rem;
 }
 
-/* .img-card-two {
-  position: relative;
+
+.nav {
+  margin-bottom: 1.3rem;
+}
+
+.nav li {
+  list-style-type: none;
+  align-items: center;
+  padding: .5em 0;
+  margin: 0;
+  text-align: center;
+}
+
+.br {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  padding: .5rem .5rem;
+}
+
+a:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.footer {
   display: flex;
-  display: block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.5em 0;
+
+  background-color: #8bc9d9;
+  border-top: 3px solid #005e76;
+
+  color: #005e76;
+}
+
+.footer ul {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.nav {
+  padding: 0 1rem;
+}
+
+img .social-img {
+  width: 25%;
+}
+
+.social {
+  padding: 0 1rem;
+  list-style-type: none;
+}
+
+.social > li {
+  margin: 0 .5em;
+}
+
+.copyright {
+  padding: 0 1rem;
   width: 100%;
 }
 
-.img-card-three {
-  position: relative;
+.about-us1 {
   display: flex;
-  display: block;
-  width: 100%;
+  flex-wrap: nowrap;
 }
 
-.img-card-four {
-  position: relative;
+.us {
   display: flex;
-  display: block;
-  width: 100%;
-} */
+  width: 30%;
+
+}
+
+.about-us p {
+  width: 70%;
+  text-align: left;
+  padding-left: .5rem;
+  margin-bottom: 1.3rem;
+}
+
+p .none {
+  display:none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+  .three {
+    margin-bottom: 1.3rem;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    font-size: 1.3rem;
+    padding: 1.3rem;
+    top: 85%;
+    padding: .2rem;
+    left: 86%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .reserve {
+    top: 89%;
+    left: 50%;
+  }
+
+  a .br {
+    font-size: 1.3rem;
+    padding: .5rem .5rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  .one,
+  .three {
+    font-size: 1.4rem;
+  }
+
+  .two {
+    font-size: 5rem;
+  }
+
+  .three {
+    margin-bottom: 2rem;
+  }
+
+
+  a {
+    font-size: 1.4rem;
+    padding: .5rem;
+  }
+
+  a .link {
+    padding: 1.4rem;
+    font-size: 1.5;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+  }
+
+  a.button {
+    font-size: 1.4;
+    padding: .5rem;
+  }
+
+  .br {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .about-us p {
+    margin-bottom: 1.4rem;
+  }
+
+  .link-card-one {
+    margin-bottom: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  .one,
+  .three {
+    font-size: 2.5rem;
+  }
+
+  .two {
+    font-size: 10.1rem;
+  }
+
+  .three {
+    margin-bottom: 3.5rem;
+  }
+
+
+  a {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  a .link {
+    padding: 1.4rem;
+    font-size: 1.5;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+    text-align: center;
+    max-width: 60em;
+  }
+
+  .title {
+    max-width: 60em;
+  }
+
+  a.button {
+    font-size: 2rem;
+    padding: .5rem;
+  }
+
+  .br {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3.3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    margin-bottom: 1.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .reserve {
+    top: 81%
+  }
+
+  .map-button {
+    top: 440%;
+    left: 76%;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  .call {
+    margin-bottom: 1.4rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+  }
+
+  .us {
+    width: 20%;
+
+  }
+
+  p .none {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .about-us p {
+    width: 80%;
+    text-align: left;
+    padding-left: .5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .link-card-one {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  .about-us1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .us {
+    display: flex;
+    width: 50%;
+
+  }
+
+  one,
+  .three {
+    font-size: 3rem;
+  }
+
+  .two {
+    font-size: 12rem;
+  }
+
+  .three {
+    margin-bottom: 3.5rem;
+  }
+
+
+  a {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  a .link {
+    padding: 2rem;
+    font-size: 1.5;
+  }
+
+  h1 {
+    font-size: 9rem;
+    text-align: center;
+    max-width: 120em;
+  }
+
+  .title {
+    max-width: 120em;
+  }
+
+  a.button {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .br {
+    font-size: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+}
